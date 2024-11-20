@@ -1,6 +1,8 @@
-import script
-def p_sjekker ():  
-    with open("passord_hash.txt", "r") as fil: 
-        
+from script import txt_fil, hash_hex, passord
 
-p_sjekker()
+def passord_sjekker(): 
+    with open (txt_fil,"r") as fil: 
+        save_hash = fil.read(txt_fil)
+        test_hash = passord
+        print("Passordet er riktig")
+    if pr
